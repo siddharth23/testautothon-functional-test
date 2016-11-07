@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Conf [
+<!ELEMENT Conf (Data+)>
+<!ATTLIST Data environment CDATA #REQUIRED>
+<!ELEMENT Data (Pages)>
+<!ELEMENT Pages (Page+)>
+<!ATTLIST Page name CDATA #REQUIRED>
+]>
+
+<Conf>
+	
+	<Data environment="live">
+		<Pages>
+			<Page name="Amazon">
+				<url>https://www.amazon.in</url>
+				<product>pen</product>
+				<category>DataSet1</category>
+			</Page>
+		</Pages>
+	</Data>	
+		
+ 	<Data environment="live">
+		<Pages>
+			<Page name="Amazon">
+				<url>https://www.amazon.in</url>
+				<product>pen</product>
+				<category>DataSet2</category>
+			</Page>
+		</Pages>
+	</Data>	   
+	
+</Conf>
